@@ -1,0 +1,44 @@
+/**app.wxss**/
+body{
+     box-sizing: border-box
+}
+.container {
+     height:100%;
+     width:750rpx;
+} 
+.flex{
+     display:flex;
+     flex-flow: row;
+}
+.textcenter{
+     justify-content: center;
+     align-items: center;
+     text-align: center
+}
+.fixed{
+     position: fixed;
+     z-index:9999;
+     top:0;
+}
+.clearfloat:after{
+     display:block;
+     clear:both;
+     content:"";
+     visibility: hidden;
+     height:0
+}
+.overflowhidden{
+     display:block;
+     white-space: nowrap;
+     overflow: hidden;
+     text-overflow: ellipsis
+}
+.overflowhidden2{
+     word-break: break-all;
+     text-overflow: ellipsis;
+     display:-webkit-box;
+     -webkit-box-orient:vertical;
+     box-orient:vertical;
+     -webkit-line-clamp:3;
+      overflow:hidden;
+}

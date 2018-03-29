@@ -1,0 +1,13 @@
+<view class="topinf clearfloat">
+     <view class="headerimg">
+          <image class="img" src="{{personInf.avatarUrl}}"></image>
+     </view>
+     <view class="rightinf">
+          <view class="names">{{personInf.nickName}}</view>
+          <view class="location">{{personInf.province+personInf.city}}</view>
+     </view>
+</view>
+<view class="mapview">
+     <view class="haha">站这别动，我去买点橘子</view>
+     <map class="maps" latitude="{{mapInf.latitude}}" longitude="{{mapInf.longitude}}" markers="{{markes}}"></map>
+</view>

@@ -1,0 +1,46 @@
+<!--pages/detail/detail.wxml-->
+<scroll-view class="detail" srcoll-y="true">
+     <view class="filmetop clearfloat">
+          <view class="filmetopleft">
+               <image src="{{movie.cover.url}}"></image>
+          </view>
+          <view class="filmetopright">
+               <view class="moviename">
+                    <text>{{movie.title}}</text>
+               </view>
+               <view class="xingji">
+                    <image wx:for="{{stars}}" src="../../images/wujiao.png"></image> 
+               </view>
+               <view class="pingfen">{{movie.rating.value}}</view>
+               <view class="shangying">{{movie.year+'.'+movie.release_date}}</view>
+               <view class="area">
+                    {{movie.card_subtitle}}
+               </view>
+          </view>
+     </view>
+     <!---------买票----------->
+     <view class="buy">
+          <view class="buytik">
+               <button type="warn">立即购票</button>
+          </view>      
+          <!-- <view class="movietips">
+               <text class="overflowhidden2">以习近平新时代中国特色社会主义思想为内在逻辑，展示了在创新、协调、绿色、开放和共享的新发展理念下中国这五年的伟大成就，展现了中国人民在全面建设小康征程上的伟大奋斗，彰显了以习近平同志为核心的党中央的正确领导。凝聚起全党全国人民的磅礴力量，为实现中华民族伟大复兴的中国梦不断前进。</text>
+          </view>    
+          <view class="downlogo">
+               <image src="../../images/down.png"></image>
+          </view> -->
+     </view>
+     <!---------阵容----------->
+     <view class="actor">
+          <view class="title">媒体库</view>
+          <view >
+               <swiper display-multiple-items="3" circular="true" autoplay="true" interval="3000">
+                    <block wx:for="{{medias}}" wx:for-item="itemVal" wx:for-index="indexVal" wx:key="id">
+                         <swiper-item bindtap="movieDetail" data-movieinf="{{itemVal}}">
+                              <image src="{{itemVal.cover.url}}"></image>
+                         </swiper-item>
+                    </block>
+               </swiper>
+          </view>
+     </view>
+</scroll-view>

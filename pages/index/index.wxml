@@ -1,0 +1,78 @@
+<view class="container">
+     <!--------禁止滚动的区域-------->
+     <view class="fixed">
+          <!------头部导航-------->
+          <view class="toptab">
+               <view class="leftarea">
+                    <picker class="city" mode="selector" range="{{movietype}}" bindchange="typeChange" value="{{index}}">{{movietype[index]}}</picker>
+                    <image class="downimg" src="../../images/down.png"></image>
+               </view>
+               <text class="toptit">享See</text>
+               <view class="rightarea"></view>
+          </view>
+          <!-- <view class="tabswrap flex textcenter">
+               <view class="tabs {{movieorca==idx?'active':''}}" wx:for="{{tabs}}" wx:for-item="itemName" wx:for-index="idx" data-idx="{{idx}}"  bindtap="switchTab">{{itemName}}</view>
+          </view>      -->
+     </view>
+     <!------电影内容区域-------->
+     <scroll-view scroll-y="true" scroll-top="{{scrollTop}}" scroll-into-view="{{toView}}" scroll-with-animation="true" bindscrolltoupper="upper" bindscrolltolower="lower" class="movies" hidden="{{movieorca==0?'':true}}" lower-threshold="200">
+           <!------热播电影-------->
+          <view class="hotmovies" id="lunbo">
+               <swiper indicator-dots="true" indicator-color="white" indicator-active-color="#e54847">
+                    <block wx:for="{{hotMovies}}" wx:for-item="itemHot" wx:key="{{hotMovies}}">
+                         <swiper-item bindtap="movieDetail" data-title="{{itemHot.title}}" data-movieInf="{{itemHot}}">
+                              <image src="{{itemHot.cover.url}}"></image>
+                         </swiper-item>
+                    </block>
+               </swiper>
+          </view>
+          <!------电影列表-------->
+          <view class="movieswrap">
+               <block wx:for="{{moviesData}}" wx:for-item="itemVal" wx:for-index="indexNum" wx:key="{{itemVal}}">
+                    <view class="movlist clearfloat" bindtap="movieDetail"  data-title="{{itemVal.title}}" data-movieInf="{{itemVal}}">
+                         <view class="movieimg">
+                              <image src="{{itemVal.cover.url}}"></image>
+                         </view>
+                         <view class="moviedes">
+                              <!------电影名字以及评分-------->
+                              <view class="movienameafen">
+                                   <text class="moviename">{{itemVal.title}}</text>
+                                   <text class="moviefen">{{itemVal.rating.value}}</text>
+                              </view>
+                              <!------电影类型-------->
+                              <view class="movietype movienameafen overflowhidden">
+                                   <text>{{itemVal.card_subtitle}}</text>
+                              </view>
+                              <!------上映的场数-------->
+                              <view class="shangying movienameafen">
+                                   <text>上映时间:</text>
+                                   <text class="yingnum">{{itemVal.year+"."+itemVal.release_date}}</text>
+                              </view>
+                              <!------购票-------->
+                              <button size="mini" class="buypiao">购票</button>
+                         </view>
+                    </view>
+               </block>
+          </view>
+     </scroll-view>
+     <!-------影院区域----------->
+     <scroll-view class="movietheatre" scroll-y="true" hidden="{{movieorca==1?'':true}}" >
+          <view class='ydidian'>
+               <block>
+                    <view class="leftjie">
+                         <view class="yingyuan">
+                              <text class="yinarea">福地国际影城</text>
+                              <text class="priceqi">33元起</text>
+                         </view>
+                         <view class="xiangdi">
+                              <text class="xiangarea">滨海新区福州道</text>
+                              <text class="juli">2.0km</text>
+                         </view>
+                         <view class="tipsss">
+                              <text>座</text>
+                         </view>
+                    </view>
+               </block>
+          </view>
+     </scroll-view>
+</view>

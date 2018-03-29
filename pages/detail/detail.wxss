@@ -1,0 +1,124 @@
+/* pages/detail/detail.wxss */
+.detail{
+     width:750rpx;
+     height:auto;
+}
+.filmetop{
+     overflow:hidden;
+     box-sizing: border-box;
+     width:750rpx;
+     height:366rpx;
+     background:#caa5a4;
+     padding:30rpx;
+}
+.filmetopleft{
+     float:left;
+     width:214rpx;
+     height:300rpx;
+}
+.filmetopleft image{
+     width:inherit;
+     height:inherit
+}
+.filmetopright{
+     box-sizing: border-box;
+     float:left;
+     width:470rpx;
+     padding-left:24rpx;
+}
+.filmetopright text{
+     color:#fff;
+}
+.moviename{
+     height:38rpx;
+     line-height:38rpx;
+     margin:6rpx 0;
+}
+.moviename text{
+     display:inline-block;
+     font-size:38rpx;
+     height:38rpx;
+}
+.area{
+     height:24rpx;
+     line-height: 24rpx;
+     font-size:22rpx;
+     color:#fff;
+     margin-bottom:12rpx;
+}
+.xingji{
+     height:38rpx;
+     line-height: 38rpx;
+     margin-bottom:12rpx;
+}
+.xingji image{
+     width:38rpx;
+     height:38rpx;
+}
+.pingfen{
+     height:24rpx;
+     font-size:22rpx;
+     line-height:22rpx;
+     color:#fff;
+     margin-bottom: 12rpx;
+}
+.movietype,.time,.shangying{
+     height:22rpx;
+     line-height:22rpx;
+     font-size:22rpx;
+     color:#fff;
+     margin-bottom:12rpx;
+
+}
+.buy{
+     box-sizing: border-box;
+     width:750rpx;
+     padding:30rpx;
+     padding-bottom:10rpx;
+     border-bottom:1px solid #e5e5e5
+}
+.buytik{
+
+}
+.movietips{
+     margin-top:20rpx;
+     overflow: hidden
+}
+.movietips text{
+     font-size:28rpx;
+}
+.downlogo{
+     height:32rpx;
+     line-height: 32rpx;
+     text-align: center;
+}
+.downlogo image{
+     width:38rpx;
+     height:32rpx;
+}
+.actor{
+     box-sizing: border-box;
+     width:750rpx;
+     height:250rpx;
+     padding:20rpx 30rpx;
+}
+.actor .title{
+     height:44rpx;
+     line-height: 44rpx;
+     font-size:32rpx;
+     padding-bottom:20rpx;
+     color:#666
+}
+.actor swiper{
+      height:140rpx;    
+}
+.actor swiper-item{
+     width:220rpx;
+     height:140rpx;
+     margin-right:10rpx;
+}
+.actor swiper-item image{
+     width:220rpx;
+     height:140rpx;
+}
+

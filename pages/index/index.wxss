@@ -1,0 +1,178 @@
+/**index.wxss**/
+.toptab{
+     display:flex;
+     width:750rpx;
+     height:101rpx;
+     padding:0 10rpx;
+     background:#e54847;
+}
+.leftarea{
+     position: relative;
+     flex:2;
+     line-height: 101rpx;
+}
+.city{
+     padding-left:20rpx;
+     font-size: 39rpx;
+     color:#ffffff;
+}
+.downimg{
+     position:absolute;
+     width:20px;
+     height:20px;
+     padding-top:2rpx;
+     right:5rpx;
+     top:27rpx;
+}
+.toptit{
+     flex:6;
+     font-size: 50rpx;
+     text-align: center;
+     line-height: 101rpx;
+     color:#ffffff;
+}
+.rightarea{
+     flex:2
+}
+.tabswrap{
+     box-sizing: border-box;
+     width:100%;
+     height:100rpx;
+     background:#ffffff;
+     border-bottom:6rpx solid #DDD8CE;
+}
+.tabs{
+     flex:5;
+     height:100rpx;
+     line-height: 100rpx;
+}
+.movies{
+     height:1500rpx;
+     margin:100rpx 0 0 0;
+}
+.active{
+     border-bottom: 6rpx solid #e54847;
+}
+.hotmovies{
+     width:100%;
+     height:350rpx;
+}
+.hotmovies swiper{
+     height:350rpx;
+}
+.hotmovies image{
+     width:100%;
+}
+.movieswrap{
+     box-sizing: border-box;
+     width:100%;
+     padding:0 20rpx;
+}
+.movlist{
+     box-sizing: border-box;
+     width:100%;
+     height:300rpx;
+     padding:20rpx 0;
+}
+.movieimg{
+     float:left;
+     width:206rpx;
+     height:260rpx;
+}
+.movieimg image{
+     width:inherit;
+     height:inherit
+}
+.moviedes{
+     box-sizing: border-box;
+     float:left;
+     height:260rpx;
+     width:504rpx;
+     padding:0 20rpx;
+}
+.movienameafen{
+     box-sizing: border-box;
+     width:100%;
+     height:52rpx;
+     line-height: 52rpx;
+     padding:0 20rpx;
+     margin-bottom:10rpx;
+}
+.moviefen{
+     color:#FFB400;
+}
+.moviefen:after{
+     content:'分';
+     font-size:20rpx;
+     padding-left:6rpx;
+}
+.movietype text{
+     font-size:24rpx;
+     color:#666
+}
+.movienameafen .moviename{
+     float:left;
+}
+.movienameafen .moviefen{
+     float:right
+}
+.shangying text{
+     font-size:24rpx;
+     color:#666;
+}
+.buypiao{
+     float:right;
+     margin-top:20rpx;
+     background:#EF4238;
+     color:#fff;
+}
+.movietheatre{
+     margin-top:200rpx;
+}
+.ydidian{
+     box-sizing: border-box;
+     width:750rpx;
+     height:280rpx;
+     padding:25rpx 32rpx;
+}
+.leftjie{
+     padding-bottom:24rpx;
+     border-bottom:1px solid #E6E6E6
+}
+.leftimg2{
+
+}
+.yingyuan{
+     height:64rpx;
+     line-height: 64rpx;
+     margin-bottom:40rpx;
+}
+.yinarea{
+     font-size:32rpx;
+     color:#333;
+     text-align: left;
+     padding-right:20rpx
+}
+.priceqi{
+     font-size:30rpx;
+     color:#e54847;
+}
+.xiangdi{
+     font-size:30rpx;
+     color:#666;
+     margin-bottom:20rpx;
+}
+.xiangarea{
+
+}
+.juli{
+     float:right
+}
+.tipsss text{
+     display:inline-block;
+     padding:6rpx;
+     border:1px solid #589DAF;
+     color:#589DAF;
+     font-size:18rpx;
+     border-radius:10rpx;
+}

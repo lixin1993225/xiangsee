@@ -1,0 +1,31 @@
+{
+  "pages":[
+    "pages/index/index",
+    "pages/logs/logs",
+    "pages/things/things",
+    "pages/cinema/cinema",
+    "pages/detail/detail"
+    
+  ],
+  "window":{
+    "backgroundTextStyle":"light",
+    "navigationBarBackgroundColor": "#fff",
+    "navigationBarTitleText": "享See",
+    "navigationBarTextStyle":"black"
+  },
+  "tabBar":{
+       "color":"#333",
+       "selectedColor":"#37993e",
+       "list":[{
+            "pagePath":"pages/index/index",
+            "text":"那些年",
+            "iconPath":"images/shop.png",
+            "selectedIconPath":"images/shop_selected.png"
+       },{
+            "pagePath":"pages/things/things",
+            "text":"那些事",
+            "iconPath":"images/peer.png",
+            "selectedIconPath":"images/peer_selected.png"
+       }]
+  }
+}
